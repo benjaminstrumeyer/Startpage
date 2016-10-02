@@ -1,0 +1,29 @@
+{
+  "name": "startPage",
+  "version": "1.0.0",
+  "description": "Custom startpage to open multiple frequently visited sites more easily.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminstrumeyer/Startpage.git"
+  },
+  "author": "Benjamin Strumeyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminstrumeyer/Startpage/issues"
+  },
+  "homepage": "https://github.com/benjaminstrumeyer/Startpage#readme",
+  "devDependencies": {
+    "bower": "^1.7.2",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0",
+    "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp-inject": "^4.1.0",
+    "wiredep": "^4.0.0"
+  }
+}
