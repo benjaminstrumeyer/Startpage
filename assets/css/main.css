@@ -41,3 +41,31 @@
 tr > td {
     padding: 9vh 8vw 9vh 8vw;
 }
+
+#td-top-left {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#td-top-middle-left {
+    border-bottom: 1px solid black;
+}
+
+#td-top-middle-right {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#td-top-right {
+    border-bottom: 1px solid black;
+}
+
+#td-bottom-middle-left {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#td-bottom-middle-right {
+    border-right: 1px solid black;
+}
