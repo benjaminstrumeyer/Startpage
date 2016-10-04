@@ -1,6 +1,10 @@
 #active-application-container {
     background: blue;
     height: 25%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #main-container {
