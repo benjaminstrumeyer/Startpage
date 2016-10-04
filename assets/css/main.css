@@ -1,0 +1,14 @@
+#active-application-container {
+    height: 25%;
+    background: blue;
+}
+
+#main-container {
+    height: 55%;
+    background: red;
+}
+
+#motivational-quote-container {
+    height: 20%;
+    background: green;
+}
