@@ -1,14 +1,22 @@
 #active-application-container {
-    height: 25%;
     background: blue;
+    height: 25%;
 }
 
 #main-container {
-    height: 55%;
     background: red;
+    height: 55%;
 }
 
 #motivational-quote-container {
     height: 20%;
     background: green;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#motivational-quote {
+    font-size: 50px;
 }
