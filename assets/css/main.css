@@ -1,6 +1,10 @@
+body {
+    background-color: #3BE6E6;
+}
+
 #active-application-container {
-    background: blue;
     height: 25%;
+    background-color: #ececec;
     
     display: flex;
     justify-content: center;
@@ -8,7 +12,6 @@
 }
 
 #main-container {
-    background: red;
     height: 55%;
     
     display: flex;
@@ -18,7 +21,7 @@
 
 #motivational-quote-container {
     height: 20%;
-    background: green;
+    background-color: #3BE6E6;
     
     display: flex;
     justify-content: center;
@@ -31,7 +34,6 @@
 
 #categories-container {
     height: 75%;
-    background: grey;
     
     display: flex;
     justify-content: center;
@@ -39,7 +41,7 @@
 }
 
 tr > td {
-    padding: 9vh 8vw 9vh 8vw;
+    padding: 6vh 8vw 6vh 8vw;
 }
 
 #td-top-left {
