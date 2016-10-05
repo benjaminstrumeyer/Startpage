@@ -1,10 +1,10 @@
 body {
-    background-color: #3BE6E6;
+    background-image: url(../img/rainbow.jpg);
 }
 
 #active-application-container {
     height: 25%;
-    background-color: #ececec;
+/*    background-color: #ececec;*/
     
     display: flex;
     justify-content: center;
@@ -21,7 +21,6 @@ body {
 
 #motivational-quote-container {
     height: 20%;
-    background-color: #3BE6E6;
     
     display: flex;
     justify-content: center;
@@ -41,7 +40,7 @@ body {
 }
 
 tr > td {
-    padding: 6vh 8vw 6vh 8vw;
+    padding: 9vh 8vw 9vh 8vw;
 }
 
 #td-top-left {
