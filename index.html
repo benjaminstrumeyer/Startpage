@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
     <title>Start Page</title>
 </head>
@@ -12,7 +13,7 @@
     </div>
     <div id="main-container" class="col-md-12 container">
         <div id="categories-container" class="container">
-            <table id="categories">
+            <table id="categories" ng-controller="HomeCtrl">
                 <tr>
                     <td id="td-top-left">
                         <img height="100px" src="assets/img/music-icon-transparent.png"></img>
@@ -63,5 +64,8 @@
     <!-- angularJS -->
     <script src="app/app.module.js"></script>
     <script src="app/app.routes.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/components/home/HomeCtrl.js"></script>
 </body>
 </html>
