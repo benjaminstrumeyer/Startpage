@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <head>
     <title>Start Page</title>
 </head>
@@ -15,31 +14,32 @@
         <div id="categories-container" class="container">
             <table id="categories" ng-controller="HomeCtrl">
                 <tr>
-                    <td id="td-top-left">
-                        <img height="100px" src="assets/img/music-icon-transparent.png"></img>
+                    <td id="td-top-left" ng-click="music = !music">
+                            <img class="category-icon" src="assets/img/music-icon-transparent.png" ng-show="music"></img>
+                            <span ng-show="!music">Directive Goes Here</span>
                     </td>
-                    <td id="td-top-middle-left">
-                        <img height="100px" src="assets/img/fun-icon.png"></img>
+                    <td id="td-top-middle-left" ng-click="fun = !fun">
+                        <img class="category-icon" src="assets/img/fun-icon.png" ng-show="fun"></img>
                     </td>
-                    <td id="td-top-middle-right">
-                        <img height="100px" src="assets/img/games-icon-transparent.png"></img>
+                    <td id="td-top-middle-right" ng-click="games = !games">
+                        <img class="category-icon" src="assets/img/games-icon-transparent.png" ng-show="games" ></img>
                     </td>
-                    <td id="td-top-right">
-                        <img height="100px" src="assets/img/programming-icon.png"></img>
+                    <td id="td-top-right" ng-click="programming = !programming">
+                        <img class="category-icon" src="assets/img/programming-icon.png" ng-show="programming" ></img>
                     </td>
                 </tr>
                 <tr>
-                    <td id="td-bottom-left">
-                        <img height="100px" src="assets/img/social-icon.png"></img>
+                    <td id="td-bottom-left" ng-click="social = !social">
+                        <img class="category-icon" src="assets/img/social-icon.png" ng-show="social" ></img>
                     </td>
-                    <td id="td-bottom-middle-left">
-                        <img height="100px" src="assets/img/surfing-icon-transparent.png"></img>
+                    <td id="td-bottom-middle-left" ng-click="surfing = !surfing">
+                        <img class="category-icon" src="assets/img/surfing-icon-transparent.png" ng-show="surfing" ></img>
                     </td>
-                    <td id="td-bottom-middle-right">
-                        <img height="100px" src="assets/img/anime-icon-modified.png"></img>
+                    <td id="td-bottom-middle-right" ng-click="anime = !anime">
+                        <img class="category-icon" src="assets/img/anime-icon-modified.png" ng-show="anime" ></img>
                     </td>
-                    <td id="td-bottom-right">
-                        <img height="100px" src="assets/img/other-icon.png"></img>
+                    <td id="td-bottom-right" ng-click="other = !other">
+                        <img class="category-icon" src="assets/img/other-icon.png" ng-show="other" ></img>
                     </td>
                 </tr>
             </table>

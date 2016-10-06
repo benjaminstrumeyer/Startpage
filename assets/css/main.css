@@ -70,3 +70,7 @@ tr > td {
 #td-bottom-middle-right {
     border-right: 3.5px solid black;
 }
+
+.category-icon {
+    height: 100px;
+}
