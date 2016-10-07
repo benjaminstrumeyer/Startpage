@@ -7,7 +7,7 @@ angular.module('startPage')
             },
             transclude: false,
             templateUrl: 'app/components/home/HotKeys/HotKeyLists.html',
-            controler: "/app/components/home/Controllers/HomeCtrl.js"
+            controller: "/app/components/home/Controllers/HomeCtrl.js"
         }
                
     });
