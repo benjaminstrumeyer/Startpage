@@ -16,7 +16,7 @@ angular.module('startPage')
             $scope.anime = true;
             $scope.other = true;
         
-            console.log(data);
+            console.log($scope.projects);
             
         })
         .error(function(data, status, headers, config) {
