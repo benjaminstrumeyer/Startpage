@@ -1,0 +1,149 @@
+[
+    {
+        [
+            {
+                nickname: "Google Media Player",
+                hotkey: "L",
+                url: "https://play.google.com/music/listen#/now"
+            },
+            {
+                nickname: "Ultimate Guitar",
+                hotkey: "U",
+                url: "https://www.ultimate-guitar.com/"
+            },
+            {
+                nickname: "Guitar Tuner",
+                hotkey: "T",
+                url: "http://www.gieson.com/Library/projects/utilities/tuner/"
+            },
+            {
+                nickname: "Justin Guitar Tutorials",
+                hotkey: "J
+                url: "http://www.justinguitar.com/"
+            },
+            {
+                nickname: "Ukulele Tabs",
+                hotkey: "O",
+                url: "https://play.google.com/music/listen#/now"
+            }
+        ]
+    },
+    {
+        [
+            {
+                nickname: "Reddit",
+                hotkey: "R",
+                url: "https://www.reddit.com/"
+            },
+            {
+                nickname: "4chan",
+                hotkey: "4",
+                url: "http://www.4chan.org/"
+            },
+            {
+                nickname: "Youtube",
+                hotkey: "Y",
+                url: "https://www.youtube.com/"
+            },
+            {
+                nickname: "Netflix",
+                hotkey: "N",
+                url: "https://www.netflix.com/"
+            }
+        ]
+    },
+    {
+        [
+            {
+                nickname: "Anther's Ladder",
+                hotkey: "A",
+                url: "https://www.smashladder.com/"
+            },
+            {
+                nickname: "Serebii",
+                hotkey: "P",
+                url: "http://serebii.net/"
+            }
+        ]
+    },
+    {
+        [
+            {
+                nickname: "Stack Overflow",
+                hotkey: "S",
+                url: "http://stackoverflow.com/"
+            },
+            {
+                nickname: "Github",
+                hotkey: "G",
+                url: "https://github.com/"
+            },
+            {
+                nickname: "HackerRank",
+                hotkey: "H",
+                url: "https://www.hackerrank.com/"
+            },
+            {
+                nickname: "LeetCode",
+                hotkey: "I",
+                url: "https://leetcode.com/"
+            }
+        ]
+    },
+    {
+        [
+            {
+                nickname: "Facebook",
+                hotkey: "B",
+                url: "http://stackoverflow.com/"
+            },
+            {
+                nickname: "Messenger",
+                hotkey: "M",
+                url: "https://www.messenger.com/"
+            },
+            {
+                nickname: "Gmail",
+                hotkey: "E",
+                url: "https://mail.google.com/mail/u/0/#inbox"
+            }
+        ]
+    },
+    {
+         [
+            {
+                nickname: "Swellinfo",
+                hotkey: "F",
+                url: "http://www.swellinfo.com/surf-forecast/long-beach-new-york"
+            },
+            {
+                nickname: "Lincoln Surf Cam",
+                hotkey: "W",
+                url: "http://www.surfline.com/surf-report/lincoln-long-island_4269/"
+            }
+        ]
+    },
+    {
+       [
+            {
+                nickname: "MangaStream",
+                hotkey: "M",
+                url: "http://mangastream.com/"
+            },
+            {
+                nickname: "Crunchyroll",
+                hotkey: "C",
+                url: "http://www.crunchyroll.com/"
+            }
+        ] 
+    },
+    {
+        [
+            {
+                nickname: "Pushbullet",
+                hotkey: "P",
+                url: "https://www.pushbullet.com/"
+            }
+        ]
+    }
+]
