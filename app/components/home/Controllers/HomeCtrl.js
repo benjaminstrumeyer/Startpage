@@ -17,16 +17,33 @@ angular.module('startPage')
             $scope.other = true;
         
             console.log($scope.hotKeyInformation);
-            var test = $scope.hotKeyInformation[0];
-            console.log($scope.hotKeyInformation[0].Music[0].nickname);
         })
         .error(function(data, status, headers, config) {
         // Log here. 
         });
     
-//    function getCategory(category, hotKeyInformation, type) {
-//        
-//    }
+    function getCategory(hotKeyInformation, category) {
+           switch (category) {
+               case "music":
+                   return hotKeyInformation[0].Music;
+               case "fun":
+                   return hotKeyInformation[0].Fun;
+               case "games":
+                   return hotKeyInformation[0].Games;
+               case "programming": 
+                   return hotKeyInformation[0].Programming;
+               case "social":
+                   return hotKeyInformation[0].Social;
+               case "surfing":
+                   return hotKeyInformation[0].Surfing;
+               case "anime":
+                   return hotKeyInformation[0].Anime;
+               case "other":
+                   return hotKeyInformation[0].Other;
+               default: 
+                   break;
+           }
+    }
 });
 
     
