@@ -5,7 +5,7 @@ angular.module('startPage')
             method: 'get',
         })
         .success(function(data, status, headers, config) {
-            $scope.projects = data;
+            $scope.hotKeyInformation = data;
         
             $scope.music = true;
             $scope.fun = true;
@@ -16,12 +16,17 @@ angular.module('startPage')
             $scope.anime = true;
             $scope.other = true;
         
-            console.log($scope.projects);
-            
+            console.log($scope.hotKeyInformation);
+            var test = $scope.hotKeyInformation[0];
+            console.log($scope.hotKeyInformation[0].Music[0].nickname);
         })
         .error(function(data, status, headers, config) {
         // Log here. 
         });
+    
+//    function getCategory(category, hotKeyInformation, type) {
+//        
+//    }
 });
 
     
