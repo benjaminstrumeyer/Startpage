@@ -1,11 +1,10 @@
 angular.module('startPage')
-    .controller('HomeCtrl', function($scope, $http) {
-    $http({
-            url: 'data/hotKeyInfo.json',
-            method: 'get',
-        })
-        .success(function(data, status, headers, config) {
-            $scope.hotKeyInformation = data;
+    .controller('HomeCtrl', function($scope, hotKeyInformation) {
+
+            hotKeyInformation.getHotKeyInfo().then(
+            function(response) {
+                console.log(response);
+            });
         
             $scope.music = false;
             $scope.fun = true;
@@ -15,35 +14,30 @@ angular.module('startPage')
             $scope.surfing = true;
             $scope.anime = true;
             $scope.other = true;
-        
-            console.log($scope.hotKeyInformation);
-        })
-        .error(function(data, status, headers, config) {
-            // Log here. 
         });
     
-    function getCategory(hotKeyInformation, category) {
-           switch (category) {
-               case "music":
-                   return hotKeyInformation[0].Music;
-               case "fun":
-                   return hotKeyInformation[0].Fun;
-               case "games":
-                   return hotKeyInformation[0].Games;
-               case "programming": 
-                   return hotKeyInformation[0].Programming;
-               case "social":
-                   return hotKeyInformation[0].Social;
-               case "surfing":
-                   return hotKeyInformation[0].Surfing;
-               case "anime":
-                   return hotKeyInformation[0].Anime;
-               case "other":
-                   return hotKeyInformation[0].Other;
-               default: 
-                   break;
-           }
-    }
-});
+//    function getCategory(hotKeyInformation, category) {
+//           switch (category) {
+//               case "music":
+//                   return hotKeyInformation[0].Music;
+//               case "fun":
+//                   return hotKeyInformation[0].Fun;
+//               case "games":
+//                   return hotKeyInformation[0].Games;
+//               case "programming": 
+//                   return hotKeyInformation[0].Programming;
+//               case "social":
+//                   return hotKeyInformation[0].Social;
+//               case "surfing":
+//                   return hotKeyInformation[0].Surfing;
+//               case "anime":
+//                   return hotKeyInformation[0].Anime;
+//               case "other":
+//                   return hotKeyInformation[0].Other;
+//               default: 
+//                   break;
+//           }
+//    }
+//});
 
     
