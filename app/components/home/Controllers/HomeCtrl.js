@@ -1,5 +1,5 @@
 angular.module('startPage')
-    .controller("HomeCtrl", function($scope, $http) {
+    .controller('HomeCtrl', function($scope, $http) {
     $http({
             url: 'data/hotKeyInfo.json',
             method: 'get',
@@ -7,7 +7,7 @@ angular.module('startPage')
         .success(function(data, status, headers, config) {
             $scope.hotKeyInformation = data;
         
-            $scope.music = true;
+            $scope.music = false;
             $scope.fun = true;
             $scope.games = true;
             $scope.programming = true;
@@ -19,7 +19,7 @@ angular.module('startPage')
             console.log($scope.hotKeyInformation);
         })
         .error(function(data, status, headers, config) {
-        // Log here. 
+            // Log here. 
         });
     
     function getCategory(hotKeyInformation, category) {

@@ -3,11 +3,12 @@ angular.module('startPage')
         return {
             restrict: "E",
             scope: {
-                category: "&category"
+                category: "@category"
             },
             transclude: false,
-            templateUrl: 'app/components/home/HotKeys/HotKeyLists.html',
-            controller: "/app/components/home/Controllers/HomeCtrl.js"
+            templateUrl: "app/components/home/HotKeys/hotkeylist.html",
+//            template: "<div>{{category}}</div>", << This is the code in the templateUrl. 
+            controller: "app/components/home/Controllers/HomeCtrl.js",
         }
                
-    });
+});
