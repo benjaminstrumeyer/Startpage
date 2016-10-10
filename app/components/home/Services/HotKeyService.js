@@ -1,30 +1,30 @@
 angular.module('startPage')
-    .service('hotKeyInformation', function($http) {    
+    .factory('hotKeyInformation', function($http) {    
         return {
-    getHotKeyInfo: function() {
-        return $http.get('data/hotKeyInfo.json')
-        .then(function(result) {
-            return result.data;
-        });
-    }
-   }
+            getHotKeyInfo: function() {
+                return $http.get('data/hotKeyInfo.json')
+                        .then(function(result) {
+                        return result.data;
+                });
+            }
+        }
 });
 
+//angular.module('startPage')
+//    .service('hotKeyInformation', function($http) {    
 //        return {
 //            getHotKeyInfo : function(callback) {
-////                $http.get('data/hotKeyInfo.json').success(callback);
 //                $http({
 //                    url: 'data/hotKeyInfo.json',
 //                    method: 'get',
 //                })
-//                .success(function(result, status, headers, config) {
+//                .success(function(data, status, headers, config) {
 ////                    console.log(data);
-//                    return result.data;
+//                    return data;
 //                })
-//                .error(function(result, status, headers, config) {
+//                .error(function(data, status, headers, config) {
 //                    // Log here. 
 //                })
 //                    }
 //                }
-//        });
-//    
+//    });
