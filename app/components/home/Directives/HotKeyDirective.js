@@ -5,7 +5,7 @@ angular.module('startPage')
             scope: {
                 category: "="
             },
-            templateUrl: "app/components/home/HotKeys/hotkeylist.html",
+            templateUrl: "app/components/home/HotKeys/hotkeylist.html"
         }
                
 });
