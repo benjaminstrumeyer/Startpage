@@ -4,6 +4,7 @@ angular.module('startPage')
             hotKeyInformation.getHotKeyInfo().then(
             function(response) {
                 console.log(response);
+                //Consider remaking the JSON file with category as a field for each object, to replace the ".Music"-like references which doesn't allow you to access it without a switch statement. 
             });
         
             $scope.music = false;

@@ -8,7 +8,7 @@ angular.module('startPage')
             transclude: false,
             templateUrl: "app/components/home/HotKeys/hotkeylist.html",
 //            template: "<div>{{category}}</div>", << This is the code in the templateUrl. 
-            controller: "app/components/home/Controllers/HomeCtrl.js",
+            controller: "app/components/home/Controllers/HomeCtrl.js"
         }
                
 });
