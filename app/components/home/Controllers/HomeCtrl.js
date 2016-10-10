@@ -15,6 +15,7 @@ angular.module('startPage')
             $scope.surfing = true;
             $scope.anime = true;
             $scope.other = true;
+    });
 
          //Consider remaking the JSON file with category as a field for each object, to replace the ".Music"-like references which doesn't allow you to access it without a switch statement. 
     
@@ -40,6 +41,5 @@ angular.module('startPage')
 //                   break;
 //           }
 //    }
-//});
 
     
