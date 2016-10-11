@@ -5,14 +5,17 @@ angular.module('startPage')
             function(response) {
                 console.log(response);
                 $scope.hotKeyInfo = response;
-                $scope.Music = getCategory($scope.hotKeyInfo, 'Music');
-                $scope.Fun = getCategory($scope.hotKeyInfo, 'Fun');
-                $scope.Games = getCategory($scope.hotKeyInfo, 'Games');
-                $scope.Programming = getCategory($scope.hotKeyInfo, 'Programming');
-                $scope.Social = getCategory($scope.hotKeyInfo, 'Social');
-                $scope.Surfing = getCategory($scope.hotKeyInfo, 'Surfing');
-                $scope.Anime = getCategory($scope.hotKeyInfo, 'Anime');
-                $scope.Other = getCategory($scope.hotKeyInfo, 'Other');
+                
+//                 project = projects.filter(x => x.name.toLowerCase() === projectName.toLowerCase())[0];
+//                $scope.Music = hotKeyInfo.filter(x => x.category === 'Music');
+//                $scope.Fun = getCategory($scope.hotKeyInfo, 'Fun');
+//                $scope.Games = getCategory($scope.hotKeyInfo, 'Games');
+//                $scope.Programming = getCategory($scope.hotKeyInfo, 'Programming');
+//                $scope.Social = getCategory($scope.hotKeyInfo, 'Social');
+//                $scope.Surfing = getCategory($scope.hotKeyInfo, 'Surfing');
+//                $scope.Anime = getCategory($scope.hotKeyInfo, 'Anime');
+//                $scope.Other = getCategory($scope.hotKeyInfo, 'Other');
+//            }
                 
             });
         
@@ -25,32 +28,32 @@ angular.module('startPage')
             $scope.anime = true;
             $scope.other = true;
     
-            $scope.gethotKeyData = function() {
+            $scope.getHotKeyData = function() {
                 return $scope.hotKeyInfo;
             }
             
-        function getCategory(hotKeyInformation, category) {
-           switch (category) {
-               case "Music":
-                   return hotKeyInformation[0].Music;
-               case "Fun":
-                   return hotKeyInformation[1].Fun;
-               case "Games":
-                   return hotKeyInformation[2].Games;
-               case "Programming": 
-                   return hotKeyInformation[3].Programming;
-               case "Social":
-                   return hotKeyInformation[4].Social;
-               case "Surfing":
-                   return hotKeyInformation[5].Surfing;
-               case "Anime":
-                   return hotKeyInformation[6].Anime;
-               case "Other":
-                   return hotKeyInformation[7].Other;
-               default: 
-                   break;
-           }
-    }
+//        function getCategory(hotKeyInformation, category) {
+//           switch (category) {
+//               case "Music":
+//                   return hotKeyInformation[0].Music;
+//               case "Fun":
+//                   return hotKeyInformation[1].Fun;
+//               case "Games":
+//                   return hotKeyInformation[2].Games;
+//               case "Programming": 
+//                   return hotKeyInformation[3].Programming;
+//               case "Social":
+//                   return hotKeyInformation[4].Social;
+//               case "Surfing":
+//                   return hotKeyInformation[5].Surfing;
+//               case "Anime":
+//                   return hotKeyInformation[6].Anime;
+//               case "Other":
+//                   return hotKeyInformation[7].Other;
+//               default: 
+//                   break;
+//           }
+//        }
     });
 
          //Consider remaking the JSON file with category as a field for each object, to replace the ".Music"-like references which doesn't allow you to access it without a switch statement. 

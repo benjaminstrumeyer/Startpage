@@ -18,10 +18,12 @@
                         <img class="category-icon" src="assets/img/music-icon-transparent.png" ng-show="music"></img>
                         <span ng-show="!music">
                             <img class="category-icon" src="assets/img/transparent-icon.png"></img>
+<!--                            <div ng-repeat="hotKey in hotKeyInfo | filter:category('Music')"></div>
+-->                             
+                <hotkey category="Music"></hotkey>
                 
                 
-                
-<!--                            <hotkey category="getHotKeyData('Music')"></hotkey>-->
+<!--                            <hotkey category="hotKeyInfo| filter:category('Music')"></hotkey>-->
 <!--                                <hotkey category="test"></hotkey>-->
                 
                 
@@ -104,5 +106,8 @@
 
     <!-- Directives -->
     <script src="app/components/home/Directives/HotKeyDirective.js"></script>
+
+    <!-- Filters -->
+    <script src="app/shared/CategoryFilter.js"></script>
 </body>
 </html>
