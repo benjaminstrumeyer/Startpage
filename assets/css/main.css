@@ -48,7 +48,8 @@ body {
 
 tr > td {
 /*    margin: 9vh 8vw 9vh 8vw;*/
-    
+    text-align: center; /* center checkbox horizontally */
+    vertical-align: middle; /* center checkbox vertically */
 }
 
 #td-top-left {
