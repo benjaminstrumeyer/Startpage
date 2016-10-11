@@ -14,19 +14,23 @@
         <div id="categories-container" class="container">
             <table id="categories" ng-controller="HomeCtrl">
                 <tr>
-                    <td id="td-top-left col" ng-click="music = !music">
-                        <img class="category-icon" src="assets/img/music-icon-transparent.png" ng-show="music"></img>
-                        <span ng-show="!music">
-<!--                            <img class="category-icon" src="assets/img/transparent-icon.png"></img>-->
-                            <hotkey category="Music"></hotkey>
-                        </span>
+                    <td id="td-top-left" ng-click="music = !music">
+                        <div class=".centered-block">
+                            <img class="category-icon" src="assets/img/music-icon-transparent.png" ng-show="music"></img>
+                            <span ng-show="!music">
+<!--                                <img class="category-icon" src="assets/img/transparent-icon.png"></img>-->
+                                <hotkey category="Music"></hotkey>
+                            </span>
+                        </div>
                     </td>
-                    <td id="td-top-middle-left col" ng-click="fun = !fun">
+                    <td id="td-top-middle-left" ng-click="fun = !fun">
+                        <div class="col-md-10 col-md-offset-1">
                         <img class="category-icon" src="assets/img/fun-icon.png" ng-show="fun"></img>
                         <span ng-show="!fun">
 <!--                            <img class="category-icon" src="assets/img/transparent-icon.png"></img>-->
                             <hotkey category="Fun"></hotkey>
                         </span>
+                        </div>
                     </td>
                     <td id="td-top-middle-right" ng-click="games = !games">
                         <img class="category-icon" src="assets/img/games-icon-transparent.png" ng-show="games"></img>
