@@ -3,9 +3,16 @@ angular.module('startPage')
         return {
             restrict: "E",
             scope: {
-                category: "="
+                category: "@"
             },
-            templateUrl: "app/components/home/HotKeys/hotkeylist.html"
+            templateUrl: "app/components/home/HotKeys/hotkeylist.html",
+            link: function(scope, elem, attrs) {
+                hotKeyInformation.getHotKeyInformation()
+                .then(function(result) {
+                    var serviceResults = result;
+                    scope.hotkeys = serviceResults.filter(hotkey => hotkey.category === scope.category);
+                }) 
+            }
         }
                
 });
