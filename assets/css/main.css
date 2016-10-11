@@ -40,7 +40,14 @@ body {
 }
 
 tr > td {
-    padding: 9vh 8vw 9vh 8vw;
+    margin: 9vh 8vw 9vh 8vw;
+}
+
+col {
+    display: table-cell;
+    vertical-align: top;
+    height: 200px;
+    width: 200px;
 }
 
 #td-top-left {

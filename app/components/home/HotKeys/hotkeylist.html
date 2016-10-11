@@ -1,14 +1,12 @@
-<!--
-<div class="col-md-6">
-    <div ng-repeat="item in category">
-        {{item.name}}
-    </div>
-</div>
-<div class="col-md-6">
-</div>
-
--->
-
 <div>
-    {{hotkeys}}
+    <div ng-repeat="hotkey in hotkeys">
+        <div class="row">
+            <div class="col-md-6">
+                {{hotkey.nickname}}
+            </div>
+            <div class="col-md-6">
+                {{hotkey.hotkey}}
+            </div>
+        </div>
+    </div>
 </div>
