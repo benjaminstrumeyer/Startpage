@@ -1,20 +1,15 @@
 angular.module('startPage')
-    .controller('launchCtrl', function ($scope, hotKeyInformation) {
-    
-    $scope.init = function () {
-    }
-    
-    $scope.init();
-    
+    .controller('launchCtrl', function ($scope, hotKeyInformation, $window) {
+
     $scope.launch = function() {
-        console.log($scope.keyPresses);
         
         hotKeyInformation.getHotKeyInformation()
             .then(function (result) {
-//            console.log(result);
-        })
-        
-        console.log(uniqueKeyPresses($scope.keyPresses));
+           
+            var uniqueHotKeys = uniqueKeyPresses($scope.keyPresses);
+            openWindows(uniqueHotKeys, result);
+            
+        });  
     }
     
     uniqueKeyPresses = function(string) {
@@ -25,5 +20,19 @@ angular.module('startPage')
             }
         }
         return result;
+    }
+    
+    openWindows = function(uniqueKeyPresses, hotKeyInfo) {
+        if (uniqueKeyPresses.length === 0) {
+            return;
+        }
+        
+        var launchInformation;
+        
+        for (var i=0; i < uniqueKeyPresses.length; i++) {
+            launchInformation = hotKeyInfo.filter(keyPress => keyPress.hotkey.toLowerCase() === uniqueKeyPresses[i].toLowerCase());
+            
+            $window.open(launchInformation[0].url);
+        }
     }
 })
