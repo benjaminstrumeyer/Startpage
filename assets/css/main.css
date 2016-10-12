@@ -115,3 +115,11 @@ tr > td {
     overflow: hidden;
     height: 100px;
 }
+
+#hidden-form {
+    opacity: .5;
+}
+
+.inline {
+    display: inline;
+}
