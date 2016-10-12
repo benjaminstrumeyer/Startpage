@@ -34,12 +34,12 @@ body {
 #categories {
     table-layout: fixed;
     width: 100%;
-    height: 150%;
+/*    height: 170%;*/
 
 }
 
 #categories-container {
-    height: 80%;
+    height: 70%;
     
     display: flex;
     justify-content: center;
@@ -49,7 +49,9 @@ body {
 tr > td {
 /*    margin: 9vh 8vw 9vh 8vw;*/
     text-align: center; /* center checkbox horizontally */
-    vertical-align: middle; /* center checkbox vertically */
+    vertical-align: middle;  /* center checkbox vertically */
+    overflow: hidden;
+    height: 30vh;
 }
 
 #td-top-left {
@@ -101,9 +103,15 @@ tr > td {
 }
 
 .text-format {
-    
+    font-size: 20px;
+    margin: 0px 0px 0px 15px; 
 }
 
 .small-buffer {
-    margin: 0px 0px 10px 0; 
+    margin: 10px 0px 0px 0; 
+}
+
+.fixed-height {
+    overflow: hidden;
+    height: 100px;
 }
