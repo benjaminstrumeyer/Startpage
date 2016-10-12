@@ -91,3 +91,19 @@ tr > td {
     margin-right: auto;
     float: none;
 }
+
+.left-align {
+    text-align: left;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.text-format {
+    
+}
+
+.small-buffer {
+    margin: 0px 0px 10px 0; 
+}
