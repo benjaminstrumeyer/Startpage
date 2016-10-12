@@ -7,6 +7,7 @@ angular.module('startPage')
     $scope.init();
     
     $scope.launch = function() {
-        console.log("test");
+        console.log($scope.keyPresses);
+        
     }
 })
