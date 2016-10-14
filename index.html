@@ -3,7 +3,7 @@
 </head>
 <html>
 <body ng-app="startPage">
-    <div id="active-application-container" class="col-md-12 container">
+    <div ng-controller="HotKeyVisualizationCtrl" id="active-application-container" class="col-md-12 container">
         <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
@@ -101,6 +101,7 @@
     <!-- Controllers -->
     <script src="app/Controllers/HomeCtrl.js"></script>
     <script src="app/Controllers/launchCtrl.js"></script>
+    <script src="app/Controllers/HotKeyVisualizationCtrl.js"></script>
 
     <!-- Directives -->
     <script src="app/Directives/HotKeyDirective.js"></script>
