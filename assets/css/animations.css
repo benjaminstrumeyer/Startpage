@@ -1,0 +1,9 @@
+.category-icons.ng-enter {
+    transition: 0.4s linear all;
+    opacity: 0;
+}
+
+.category-icons.ng-enter-active {
+    transition: 0.4s linear all;
+    opacity: 1;
+}
