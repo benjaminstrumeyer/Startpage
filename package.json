@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/benjaminstrumeyer/Startpage#readme",
   "devDependencies": {
-    "bower": "^1.7.2",
+    "angular-animate": "^1.5.8",
+    "bower": "^1.7.9",
     "gulp": "^3.9.1",
     "gulp-inject": "^4.1.0",
     "wiredep": "^4.0.0"
