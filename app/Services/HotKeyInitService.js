@@ -19,6 +19,4 @@ app
             }
             return hotKeyInit.uniqueHotKeys;
         };
-    
-        return hotKeyInit;
 });

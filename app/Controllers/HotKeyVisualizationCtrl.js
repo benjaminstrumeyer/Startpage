@@ -8,16 +8,22 @@ angular.module('startPage')
         
         var imgPaths = [];
         
-        for (let i = 0; i < initHotKeys.length; i++) {
-            
-            let imgName = hotKeyInformation.find(keyPress => keyPress.hotkey.toLowerCase() === initHotKeys[i].toLowerCase());
-            
-            console.log(imgName.nickname);
-
-        }
-        
-//        console.log(initHotKeys);
+        initImgPaths(initHotKeys, imgPaths);        
     
+    }
+    
+    function initImgPaths(initHotKeys, imgPaths) {
+
+        for (let i = 0; i < initHotKeys.length; i++) {
+
+            let imgObj = hotKeyInformation.find(keyPress => keyPress.hotkey.toLowerCase() === initHotKeys[i].toLowerCase());
+
+            console.log(imgObj.nickname);
+
+            imgPath = "assets/img/CategoryIcons/" + imgObj.nickname;
+
+            imgPaths.push(imgPath);
+        }
     }
     
 //    $scope.$watch('initHotKeys', function(oldVal, newVal) {
