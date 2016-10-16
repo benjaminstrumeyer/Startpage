@@ -18,8 +18,6 @@ angular.module('startPage')
         return defer.promise;
     }
     
-    return hotKeyInformation;
-    
 });
 
 //        return {

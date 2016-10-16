@@ -1,10 +1,21 @@
 angular.module('startPage')
-    .controller('HotKeyVisualizationCtrl', function ($scope, hotKeyInit) {
+    .controller('HotKeyVisualizationCtrl', function ($scope, hotKeyInit, hotKeyInformation) {
     
     $scope.init = function() {
         
         var initHotKeys = hotKeyInit.uniqueKeyPresses();
         console.log(initHotKeys);
+        
+        var imgPaths = [];
+        
+        for (let i = 0; i < initHotKeys.length; i++) {
+            
+            let imgName = hotKeyInformation.find(keyPress => keyPress.hotkey.toLowerCase() === initHotKeys[i].toLowerCase());
+            
+            console.log(imgName.nickname);
+
+        }
+        
 //        console.log(initHotKeys);
     
     }
