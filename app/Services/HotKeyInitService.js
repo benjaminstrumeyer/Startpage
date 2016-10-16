@@ -3,18 +3,21 @@ app
     
         var hotKeyInit = this;
 
-        hotKeyInit.clickedHotKeys = {};
+        hotKeyInit.clickedHotKeys = {
+            newVal: "",
+            oldVal: ""
+        };
+    
+        hotKeyInit.uniqueHotKeys = [];
     
         hotKeyInit.uniqueKeyPresses = function() {
-            var result = [];
-            
-            
+                     
             for (var i=0; i < hotKeyInit.clickedHotKeys.newVal.length; i++) {
-                if (!result.includes(hotKeyInit.clickedHotKeys.newVal[i])) {
-                    result.push(hotKeyInit.clickedHotKeys.newVal[i]);
+                if (!hotKeyInit.uniqueHotKeys.includes(hotKeyInit.clickedHotKeys.newVal[i])) {
+                    hotKeyInit.uniqueHotKeys.push(hotKeyInit.clickedHotKeys.newVal[i]);
                 }
             }
-            return result;
+            return hotKeyInit.uniqueHotKeys;
         };
     
         return hotKeyInit;

@@ -2,7 +2,9 @@ angular.module('startPage')
     .controller('HotKeyVisualizationCtrl', function ($scope, hotKeyInit) {
     
     $scope.init = function() {
-        var initHotKeys = hotKeyInit.clickedHotKeys;
+        
+        var initHotKeys = hotKeyInit.uniqueKeyPresses();
+        console.log(initHotKeys);
 //        console.log(initHotKeys);
     
     }

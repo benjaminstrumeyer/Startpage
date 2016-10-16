@@ -1,19 +1,18 @@
 angular.module('startPage')
-    .controller('launchCtrl', function ($scope, $window, hotKeyInformation, keyPresses) {
+    .controller('launchCtrl', function ($scope, $window, hotKeyInformation, hotKeyInit) {
 
      $scope.$watch('keyPresses', function (newVal, oldVal) {
        if (!newVal) return;
     
-        keyPresses.clickedHotKeys.newVal = newVal;
-        keyPresses.clickedHotKeys.oldVal = oldVal;
+        hotKeyInit.clickedHotKeys.newVal = newVal;
+        hotKeyInit.clickedHotKeys.oldVal = oldVal;
     });
     
     $scope.launch = function() {
         
         hotKeyInformation.getHotKeyInformation()
-            .then(function (result) {           
-                var uniqueHotKeys = keyPresses.uniqueKeyPresses();
-                
+            .then(function (result) {
+                var uniqueHotKeys = hotKeyInit.uniqueKeyPresses();
                 openWindows(uniqueHotKeys, result);   
             });
     };
