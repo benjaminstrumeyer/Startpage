@@ -27,20 +27,20 @@ angular.module('startPage')
 //        return result;
 //    };
             
-    function openWindows(uniqueKeyPresses, hotKeyInfo) {
+    function openWindows(uniqueHotKeys, hotKeyInfo) {
         
-        if (!uniqueKeyPresses.length) {
+        if (!uniqueHotKeys.length) {
             return;
         }
 
-        var first = uniqueKeyPresses[0];
-        uniqueKeyPresses.splice(0,1);
-        uniqueKeyPresses.push(first);
+        var first = uniqueHotKeys[0];
+        uniqueHotKeys.splice(0,1);
+        uniqueHotKeys.push(first);
                 
-        for (let i=0; i < uniqueKeyPresses.length; i++) {
-            let launchInformation = hotKeyInfo.find(keyPress => keyPress.hotkey.toLowerCase() === uniqueKeyPresses[i].toLowerCase());
+        for (let i=0; i < uniqueHotKeys.length; i++) {
+            let launchInformation = hotKeyInfo.find(keyPress => keyPress.hotkey.toLowerCase() === uniqueHotKeys[i].toLowerCase());
             
-            if (i !== uniqueKeyPresses.length - 1)
+            if (i !== uniqueHotKeys.length - 1)
                 $window.open(launchInformation.url);
             else
                 $window.open(launchInformation.url, "_self");
