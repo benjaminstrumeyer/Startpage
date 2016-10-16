@@ -1,4 +1,4 @@
-angular.module('startPage')
+app
     .controller('launchCtrl', function ($scope, $window, hotKeyInformation, hotKeyInit) {
 
      $scope.$watch('keyPresses', function (newVal, oldVal) {
@@ -16,16 +16,6 @@ angular.module('startPage')
                 openWindows(uniqueHotKeys, result);   
             });
     };
-    
-//    function uniqueKeyPresses(string) {
-//        var result = [];
-//        for (var i=0; i < string.length; i++) {
-//            if (!result.includes(string[i])) {
-//                result.push(string[i]);
-//            }
-//        }
-//        return result;
-//    };
             
     function openWindows(uniqueHotKeys, hotKeyInfo) {
         

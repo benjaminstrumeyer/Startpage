@@ -1,4 +1,4 @@
-angular.module('startPage')
+app
     .service('hotKeyInformation', function($http, $q) {    
         
     var hotKeyInformation = this;

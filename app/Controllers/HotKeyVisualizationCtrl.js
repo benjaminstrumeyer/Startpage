@@ -1,4 +1,4 @@
-angular.module('startPage')
+app
     .controller('HotKeyVisualizationCtrl', function ($scope, hotKeyInit, hotKeyInformation) {
     
     $scope.init = function() {
@@ -25,20 +25,6 @@ angular.module('startPage')
             imgPaths.push(imgPath);
         }
     }
-    
-//    $scope.$watch('initHotKeys', function(oldVal, newVal) {
-//            if (!newVal) return;
-//            
-//            console.log(oldVal);
-//            console.log(newVal);
-//        });
-    
-//    $scope.$watch('keyPresses', function (newVal, oldVal) {
-//       if (!newVal) return;
-//    
-//        keyPresses.clickedHotKeys.newVal = newVal;
-//        keyPresses.clickedHotKeys.oldVal = oldVal;
-//    });
-    
+
     $scope.init();
 })

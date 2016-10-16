@@ -1,4 +1,4 @@
-angular.module('startPage')
+app
     .directive('hotkey', function(hotKeyInformation) {
         return {
             restrict: "E",

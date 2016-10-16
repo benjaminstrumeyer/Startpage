@@ -1,4 +1,4 @@
-angular.module('startPage')
+app
     .controller('HomeCtrl', function($scope) {
     
         $scope.init = function() {
