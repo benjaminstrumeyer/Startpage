@@ -1,6 +1,12 @@
 angular.module('startPage')
     .controller('launchCtrl', function ($scope, hotKeyInformation, $window) {
 
+     $scope.$watch('keyPresses', function (newVal, oldVal) {
+       if (!newVal) return;
+    
+        $scope.appendText();
+    });
+    
     $scope.launch = function() {
         
         hotKeyInformation.getHotKeyInformation()
@@ -39,4 +45,6 @@ angular.module('startPage')
                 $window.open(launchInformation.url, "_self");
         }
     };
+    
+    
 })

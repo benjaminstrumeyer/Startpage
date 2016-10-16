@@ -2,12 +2,16 @@
     <title>Start Page</title>
 </head>
 <html>
-<body ng-app="startPage">
-    <div ng-controller="HotKeyVisualizationCtrl" id="active-application-container" class="col-md-12 container">
-        <div class="row">
+<body ng-app="startPage" >
+    <div ng-controller="HotKeyVisualizationCtrl">
+    <div id="active-application-container" class="col-md-12 container">
+        <div class="row" ng-bind-html="test">
+            
+<!--
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
+-->
         </div>
     </div>
     <div id="main-container" class="col-md-12 container">
@@ -78,6 +82,7 @@
     <div id="motivational-quote-container" class="col-md-12 container">
         <div id="motivational-quote"></div>
     </div>
+</div>
         
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
@@ -105,6 +110,5 @@
 
     <!-- Directives -->
     <script src="app/Directives/HotKeyDirective.js"></script>
-
 </body>
 </html>

@@ -1,5 +1,5 @@
 angular.module('startPage')
-    .controller('HomeCtrl', function($scope, $timeout) {
+    .controller('HomeCtrl', function($scope) {
     
         $scope.init = function() {
             $scope.music = true;
@@ -13,11 +13,4 @@ angular.module('startPage')
         }
         
         $scope.init();
-    
-    
-        $scope.toggle = function() {
-            $timeout(function () {
-                $scope.music = false;
-            }, 1000);
-        }
     });
