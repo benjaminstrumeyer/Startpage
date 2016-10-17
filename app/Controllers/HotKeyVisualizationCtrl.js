@@ -6,25 +6,27 @@ app
         var initHotKeys = hotKeyInit.uniqueKeyPresses();
         console.log(initHotKeys);
         
-        var imgPaths = [];
-        
-        initImgPaths(initHotKeys, imgPaths);        
+        $scope.imgPaths = hotKeyInit.initImgPaths();
     
     }
     
-    function initImgPaths(initHotKeys, imgPaths) {
-
-        for (let i = 0; i < initHotKeys.length; i++) {
-
-            let imgObj = hotKeyInformation.find(keyPress => keyPress.hotkey.toLowerCase() === initHotKeys[i].toLowerCase());
-
-            console.log(imgObj.nickname);
-
-            imgPath = "assets/img/CategoryIcons/" + imgObj.nickname;
-
-            imgPaths.push(imgPath);
-        }
-    }
+//    function initImgPaths(initHotKeys, imgPaths) {
+//        
+//        var imgPaths = [];
+//
+//        for (let i = 0; i < initHotKeys.length; i++) {
+//
+//            let imgObj = hotKeyInformation.find(keyPress => keyPress.hotkey.toLowerCase() === initHotKeys[i].toLowerCase());
+//
+//            console.log(imgObj.nickname);
+//
+//            imgPath = "assets/img/HotkeyImages/" + imgObj.imgName + ".png";
+//
+//            imgPaths.push(imgPath);
+//        }
+//        
+//        return imgPaths;
+//    }
 
     $scope.init();
 })

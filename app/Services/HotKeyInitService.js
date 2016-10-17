@@ -1,5 +1,5 @@
 app
-    .service('hotKeyInit', function() {
+    .service('hotKeyInit', function(hotKeyInformation) {
     
         var hotKeyInit = this;
 
@@ -8,15 +8,36 @@ app
             oldVal: ""
         };
     
-        hotKeyInit.uniqueHotKeys = [];
+        hotKeyInit.uniqueHotKeys = []; 
+    
+        hotKeyInit.imgPaths = [];
     
         hotKeyInit.uniqueKeyPresses = function() {
                      
-            for (var i=0; i < hotKeyInit.clickedHotKeys.newVal.length; i++) {
+            for (let i = 0; i < hotKeyInit.clickedHotKeys.newVal.length; i++) {
                 if (!hotKeyInit.uniqueHotKeys.includes(hotKeyInit.clickedHotKeys.newVal[i])) {
                     hotKeyInit.uniqueHotKeys.push(hotKeyInit.clickedHotKeys.newVal[i]);
                 }
             }
+            console.log(hotKeyInit.uniqueHotKeys);
             return hotKeyInit.uniqueHotKeys;
         };
+    
+        hotKeyInit.initImgPaths = function() {
+            
+            var uniqueHotKeys = this.uniqueKeyPresses();
+
+            for (let i = 0; i < uniqueHotKeys.length; i++) {
+
+                let imgObj = hotKeyInformation.find(keyPress => keyPress.hotkey.toLowerCase() === uniqueHotKeys[i].toLowerCase());
+
+                console.log(imgObj.imgName);
+
+                imgPath = "assets/img/HotkeyImages/" + imgObj.imgName + ".png";
+
+                this.imgPaths.push(imgPath);
+            }
+
+            return this.imgPaths;
+        }
 });
