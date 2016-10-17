@@ -3,138 +3,161 @@
         "nickname": "Google Music",
         "hotkey": "L",
         "url": "https://play.google.com/music/listen#/now",
-        "category": "Music"
+        "category": "Music",
+        "imgName" : "Google-Music"
     },
     {
         "nickname": "Ultimate Guitar",
         "hotkey": "U",
         "url": "https://www.ultimate-guitar.com/",
-        "category": "Music"
+        "category": "Music",
+        "imgName" : "Ultimate-Guitar"
     },
     {
         "nickname": "Guitar Tuner",
         "hotkey": "T",
         "url": "http://www.gieson.com/Library/projects/utilities/tuner/",
-        "category": "Music"
+        "category": "Music",
+        "imgName" : "Guitar-Tuner"
     },
     {
         "nickname": "Justin Guitar",
         "hotkey": "J",
         "url": "http://www.justinguitar.com/",
-        "category": "Music"
+        "category": "Music",
+        "imgName" : "Justin-Guitar"
     },
     {
         "nickname": "Ukulele Tabs",
         "hotkey": "O",
         "url": "https://play.google.com/music/listen#/now",
-        "category": "Music"
+        "category": "Music",
+        "imgName" : "Ukulele-Tabs"
     },
     {
         "nickname": "Reddit",
         "hotkey": "R",
         "url": "https://www.reddit.com/",
-        "category": "Fun"
+        "category": "Fun",
+        "imgName" : "Reddit"
     },
     {
         "nickname": "4chan",
         "hotkey": "4",
         "url": "http://www.4chan.org/",
-        "category": "Fun"
+        "category": "Fun",
+        "imgName" : "4chan"
     },
     {
         "nickname": "Youtube",
         "hotkey": "Y",
         "url": "https://www.youtube.com/",
-        "category": "Fun"
+        "category": "Fun",
+        "imgName" : "Youtube"
     },
     {
         "nickname": "Netflix",
         "hotkey": "N",
         "url": "https://www.netflix.com/",
-        "category": "Fun"
+        "category": "Fun",
+        "imgName" : "Netflix"
     },
     {
         "nickname": "Anther's Ladder",
         "hotkey": "A",
         "url": "https://www.smashladder.com/",
-        "category": "Games"
+        "category": "Games",
+        "imgName" : "Anther's-Ladder"
     },
     {
         "nickname": "Serebii",
         "hotkey": "P",
         "url": "http://serebii.net/",
-        "category": "Games"
+        "category": "Games",
+        "imgName" : "Serebii"
     },
     {
         "nickname": "Stack Overflow",
         "hotkey": "S",
         "url": "http://stackoverflow.com/",
-        "category": "Programming"
+        "category": "Programming",
+        "imgName" : "Stack-Overflow"
     },
     {
         "nickname": "Github",
         "hotkey": "G",
         "url": "https://github.com/",
-        "category": "Programming"
+        "category": "Programming",
+        "imgName" : "Github"
     },
     {
         "nickname": "HackerRank",
         "hotkey": "H",
         "url": "https://www.hackerrank.com/",
-        "category": "Programming"
+        "category": "Programming",
+        "imgName" : "HackerRank"
     },
     {
         "nickname": "LeetCode",
         "hotkey": "I",
         "url": "https://leetcode.com/",
-        "category": "Programming"
+        "category": "Programming",
+        "imgName" : "LeetCode"
     },
     {
         "nickname": "Facebook",
         "hotkey": "B",
         "url": "https://www.facebook.com/",
-        "category": "Social"
+        "category": "Social",
+        "imgName" : "Facebook"
     },
     {
         "nickname": "Messenger",
         "hotkey": "M",
         "url": "https://www.messenger.com/",
-        "category": "Social"
+        "category": "Social",
+        "imgName" : "Messenger"
     },
     {
         "nickname": "Gmail",
         "hotkey": "E",
         "url": "https://mail.google.com/mail/u/0/#inbox",
-        "category": "Social"
+        "category": "Social",
+        "imgName" : "Gmail"
     },
     {
         "nickname": "Swellinfo",
         "hotkey": "F",
         "url": "http://www.swellinfo.com/surf-forecast/long-beach-new-york",
-        "category": "Surfing"
+        "category": "Surfing",
+        "imgName" : "Swellinfo"
     },
     {
         "nickname": "Lincoln Surf Cam",
         "hotkey": "W",
         "url": "http://www.surfline.com/surf-report/lincoln-long-island_4269/",
-        "category": "Surfing"
+        "category": "Surfing",
+        "imgName" : "Lincoln-Surf-Cam"
     },
     {
         "nickname": "MangaStream",
         "hotkey": "M",
         "url": "http://mangastream.com/",
-        "category": "Anime"
+        "category": "Anime",
+        "imgName" : "MangaStream"
     },
     {
         "nickname": "Crunchyroll",
         "hotkey": "C",
         "url": "http://www.crunchyroll.com/",
-        "category": "Anime"
+        "category": "Anime",
+        "imgName" : "Crunchyroll"
     },
     {
         "nickname": "Pushbullet",
         "hotkey": "P",
         "url": "https://www.pushbullet.com/",
-        "category": "Other"
+        "category": "Other",
+        "imgName" : "Pushbullet"
     }
 ]
