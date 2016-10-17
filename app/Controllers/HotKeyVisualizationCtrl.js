@@ -4,9 +4,32 @@ app
     $scope.init = function() {
         
         var initHotKeys = hotKeyInit.uniqueKeyPresses();
-        console.log(initHotKeys);
         
-        $scope.imgPaths = hotKeyInit.initImgPaths();
+        $scope.imgPaths = [];
+        
+        var imgPaths = [];
+//        console.log(imgPaths);
+        
+        hotKeyInformation.getHotKeyInformation()
+            .then(function (result) {
+                var uniqueHotKeys = hotKeyInit.uniqueKeyPresses();
+                console.log(uniqueHotKeys);
+        });
+        
+        
+//        $scope.$watch('hotKeyInit.imgPaths', function (newVal, oldVal) {
+//            if (!newVal) return;
+//    
+//           $scope.imgPaths = hotKeyInit.initImgPaths();
+//        });
+//        
+//        var uniqueHotKeys = hotKeyInit.uniqueKeyPresses();
+////        console.log(uniqueHotKeys);
+//        
+//        var test = hotKeyInit.initImgPaths();
+////        console.log(test);
+//        
+        
     
     }
     

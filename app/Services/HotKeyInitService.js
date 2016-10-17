@@ -19,25 +19,23 @@ app
                     hotKeyInit.uniqueHotKeys.push(hotKeyInit.clickedHotKeys.newVal[i]);
                 }
             }
-            console.log(hotKeyInit.uniqueHotKeys);
+//            console.log(hotKeyInit.uniqueHotKeys);
             return hotKeyInit.uniqueHotKeys;
         };
     
         hotKeyInit.initImgPaths = function() {
             
             var uniqueHotKeys = this.uniqueKeyPresses();
-
-            for (let i = 0; i < uniqueHotKeys.length; i++) {
+            console.log('uniqueHotKeys', uniqueHotKeys);
 
                 let imgObj = hotKeyInformation.find(keyPress => keyPress.hotkey.toLowerCase() === uniqueHotKeys[i].toLowerCase());
 
-                console.log(imgObj.imgName);
+//                console.log(imgObj.imgName);
 
                 imgPath = "assets/img/HotkeyImages/" + imgObj.imgName + ".png";
 
                 this.imgPaths.push(imgPath);
-            }
 
-            return this.imgPaths;
+            return hotKeyInit.imgPaths;
         }
 });

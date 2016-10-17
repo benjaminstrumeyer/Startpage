@@ -13,8 +13,12 @@ app
         hotKeyInformation.getHotKeyInformation()
             .then(function (result) {
                 var uniqueHotKeys = hotKeyInit.uniqueKeyPresses();
+                console.log(uniqueHotKeys);
+            
+                var test = hotKeyInit.initImgPaths();
+                console.log(test);  
                 openWindows(uniqueHotKeys, result);   
-            });
+        });
     };
             
     function openWindows(uniqueHotKeys, hotKeyInfo) {
