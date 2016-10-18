@@ -24,7 +24,7 @@ app
             if (!uniqueHotKeys.includes(hotkey)) {
                 let hotkeyInfo = self.hotKeyList.find(info => info.hotkey.toLowerCase() === hotkey.toLowerCase());
                 hotkeyInfo.imgPath = getImagePath(hotkeyInfo);
-                uniqueHotKeys.push(hotkeyInfo); // wtf?
+                uniqueHotKeys.push(hotkeyInfo);
             }
         }
         return uniqueHotKeys;
