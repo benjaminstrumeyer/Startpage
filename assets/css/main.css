@@ -117,9 +117,10 @@ tr > td {
 }
 
 #hidden-form {
-    opacity: .5;
+    opacity: 0;
 }
 
 .inline {
-    display: inline;
+    position: absolute;
+    margin: 0vw 0vw 0vw -54vw;
 }

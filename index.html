@@ -9,7 +9,7 @@
         <div id="active-application-container" class="col-md-12 container">
             <div class="row">
                 <span ng-repeat="hotkey in uniqueHotKeys">
-                    <img src="{{hotkey.imgPath}}"/>
+                    <img class="hotkey-icon" src="{{hotkey.imgPath}}"/>
                 </span>
             </div>
         </div>
@@ -76,7 +76,7 @@
             </div>
             <div ng-controller="launchCtrl">
                 <form class="inline" ng-submit="launch()">
-                    <input id="hidden-form" type="text" autofocus ng-model="keyPresses" />
+                    <input id="hidden-form" type="text" autofocus autocomplete="off" ng-model="keyPresses" />
                 </form>
             </div>
         </div>
