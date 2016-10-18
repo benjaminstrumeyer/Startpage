@@ -1,93 +1,96 @@
 <head>
     <title>Start Page</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
 </head>
 <html>
 <body ng-app="startPage">
-    <div ng-controller="HotKeyVisualizationCtrl">
-    <div id="active-application-container" class="col-md-12 container">
-        <div class="row" ng-controller="HotKeyVisualizationCtrl" ng-repeat="image in imgPaths">
-            <span>
-                <img src="{{image}}"/>
-            </span>
-<!--
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
--->
+    <div>
+        <div id="active-application-container" class="col-md-12 container">
+            <div class="row">
+                <span ng-repeat="hotkey in uniqueHotKeys">
+                    <img src="{{hotkey.imgPath}}"/>
+                </span>
+            </div>
         </div>
-    </div>
-    <div id="main-container" class="col-md-12 container">
-        <div id="categories-container" class="container">
-            <table id="categories" ng-controller="HomeCtrl">
-                <tr>
-                    <td id="td-top-left" ng-click="music = !music">
-                        <div>
-                            <img id="music-icon" class="category-icon" src="assets/img/CategoryIcons/music-icon-transparent.png" ng-show="music"></img>
-                            <span ng-show="!music">
-                                <hotkey category="Music"></hotkey>
+        <div id="main-container" class="col-md-12 container">
+            <div id="categories-container" class="container">
+                <table id="categories" ng-controller="HomeCtrl">
+                    <tr>
+                        <td id="td-top-left" ng-click="music = !music">
+                            <div>
+                                <img id="music-icon" class="category-icon" src="assets/img/CategoryIcons/music-icon-transparent.png" ng-show="music"></img>
+                                <span ng-show="!music">
+                                    <hotkey category="Music"></hotkey>
+                                </span>
+                            </div>
+                        </td>
+                        <td id="td-top-middle-left" ng-click="fun = !fun">
+                            <div id="fun-icon" class="col-md-10 col-md-offset-1">
+                            <img class="category-icon" src="assets/img/CategoryIcons/fun-icon.png" ng-show="fun"></img>
+                            <span ng-show="!fun">
+                                <hotkey category="Fun"></hotkey>
                             </span>
-                        </div>
-                    </td>
-                    <td id="td-top-middle-left" ng-click="fun = !fun">
-                        <div id="fun-icon" class="col-md-10 col-md-offset-1">
-                        <img class="category-icon" src="assets/img/CategoryIcons/fun-icon.png" ng-show="fun"></img>
-                        <span ng-show="!fun">
-                            <hotkey category="Fun"></hotkey>
-                        </span>
-                        </div>
-                    </td>
-                    <td id="td-top-middle-right" ng-click="games = !games">
-                        <img id="games-icon" class="category-icon" src="assets/img/CategoryIcons/games-icon-transparent.png" ng-show="games"></img>
-                        <span ng-show="!games">
-                            <hotkey category="Games"></hotkey>
-                        </span>
-                    </td>
-                    <td id="td-top-right" ng-click="programming = !programming">
-                        <img id="programming-icon"  class="category-icon" src="assets/img/CategoryIcons/programming-icon.png" ng-show="programming"></img>
-                        <span ng-show="!programming">
-                            <hotkey category="Programming"></hotkey>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td id="td-bottom-left" ng-click="social = !social">
-                        <img id="social-icon" class="category-icon" src="assets/img/CategoryIcons/social-icon.png" ng-show="social"></img>
-                        <span ng-show="!social">
-                            <hotkey category="Social"></hotkey>
-                        </span>
-                    </td>
-                    <td id="td-bottom-middle-left" ng-click="surfing = !surfing">
-                        <img id="surfing-icon" class="category-icon" src="assets/img/CategoryIcons/surfing-icon-transparent.png" ng-show="surfing"></img>
-                        <span ng-show="!surfing">
-                            <hotkey category="Surfing"></hotkey>
-                        </span>
-                    </td>
-                    <td id="td-bottom-middle-right" ng-click="anime = !anime">
-                        <img id="anime-icon" class="category-icon" src="assets/img/CategoryIcons/anime-icon-modified.png" ng-show="anime"></img>
-                        <span ng-show="!anime">
-                            <hotkey category="Anime"></hotkey>
-                        </span>
-                    </td>
-                    <td id="td-bottom-right" ng-click="other = !other">
-                        <img id="other-icon" class="category-icon" src="assets/img/CategoryIcons/other-icon.png" ng-show="other"></img>
-                        <span ng-show="!other">
-                            <hotkey category="Other"></hotkey>
-                        </span>
-                    </td>
-                </tr>
-            </table>
-            <form class="inline" ng-submit="launch()" ng-controller="launchCtrl">
-                <input id="hidden-form" type="text" autofocus ng-model="keyPresses"/>
-            </form>
+                            </div>
+                        </td>
+                        <td id="td-top-middle-right" ng-click="games = !games">
+                            <img id="games-icon" class="category-icon" src="assets/img/CategoryIcons/games-icon-transparent.png" ng-show="games"></img>
+                            <span ng-show="!games">
+                                <hotkey category="Games"></hotkey>
+                            </span>
+                        </td>
+                        <td id="td-top-right" ng-click="programming = !programming">
+                            <img id="programming-icon"  class="category-icon" src="assets/img/CategoryIcons/programming-icon.png" ng-show="programming"></img>
+                            <span ng-show="!programming">
+                                <hotkey category="Programming"></hotkey>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="td-bottom-left" ng-click="social = !social">
+                            <img id="social-icon" class="category-icon" src="assets/img/CategoryIcons/social-icon.png" ng-show="social"></img>
+                            <span ng-show="!social">
+                                <hotkey category="Social"></hotkey>
+                            </span>
+                        </td>
+                        <td id="td-bottom-middle-left" ng-click="surfing = !surfing">
+                            <img id="surfing-icon" class="category-icon" src="assets/img/CategoryIcons/surfing-icon-transparent.png" ng-show="surfing"></img>
+                            <span ng-show="!surfing">
+                                <hotkey category="Surfing"></hotkey>
+                            </span>
+                        </td>
+                        <td id="td-bottom-middle-right" ng-click="anime = !anime">
+                            <img id="anime-icon" class="category-icon" src="assets/img/CategoryIcons/anime-icon-modified.png" ng-show="anime"></img>
+                            <span ng-show="!anime">
+                                <hotkey category="Anime"></hotkey>
+                            </span>
+                        </td>
+                        <td id="td-bottom-right" ng-click="other = !other">
+                            <img id="other-icon" class="category-icon" src="assets/img/CategoryIcons/other-icon.png" ng-show="other"></img>
+                            <span ng-show="!other">
+                                <hotkey category="Other"></hotkey>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div ng-controller="launchCtrl">
+                <form class="inline" ng-submit="launch()">
+                    <input id="hidden-form" type="text" autofocus ng-model="keyPresses" />
+                </form>
+            </div>
+        </div>
+        <div id="motivational-quote-container" class="col-md-12 container">
+            <div id="motivational-quote">
+                First make it work, then make it better.
+
+                - Pikachu 2016
+
+
+            </div>
         </div>
     </div>
-    <div id="motivational-quote-container" class="col-md-12 container">
-        <div id="motivational-quote"></div>
-    </div>
-</div>
-        
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" />
+    
 
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>

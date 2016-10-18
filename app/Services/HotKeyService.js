@@ -1,21 +1,37 @@
 app
     .service('hotKeyInformation', function($http, $q) {    
         
-    var hotKeyInformation = this;
-    hotKeyInformation.hotKeyList = {};
+    var self = this;
+
+    self.hotKeyList = [];
     
-    hotKeyInformation.getHotKeyInformation = function() {
-        var defer = $q.defer();
-        
+    var getHotKeyInformation = function() {        
         $http.get('data/hotKeyInfo.json')
             .success(function(result) {
-                hotKeyInformation.hotKeyList = result;
-                defer.resolve(result);         
-            })
-            .error(function(res) {
-                defer.reject(error);
-            })
-        return defer.promise;
+                self.hotKeyList = result;
+
+                console.log(self.hotKeyList)
+            });
+    };
+
+    getHotKeyInformation();
+        
+    // TODO: might need better naming
+    self.getUniqueKeyPresses = function(keyPresses) {
+        var uniqueHotKeys = [];
+
+        for (let hotkey of keyPresses) {                
+            if (!uniqueHotKeys.includes(hotkey)) {
+                let hotkeyInfo = self.hotKeyList.find(info => info.hotkey.toLowerCase() === hotkey.toLowerCase());
+                hotkeyInfo.imgPath = getImagePath(hotkeyInfo);
+                uniqueHotKeys.push(hotkeyInfo); // wtf?
+            }
+        }
+        return uniqueHotKeys;
+    };
+
+    function getImagePath(hotkeyInfo)
+    {
+        return "assets/img/HotkeyImages/" + hotkeyInfo.imgName + ".png";
     }
-    
-});
+}); 
