@@ -120,7 +120,12 @@ tr > td {
     opacity: 0;
 }
 
-.inline {
+.hidden-input-field {
     position: absolute;
     margin: 0vw 0vw 0vw -54vw;
+}
+
+.hotkey-icon {
+    height: 120px;
+    width: 120px;
 }
