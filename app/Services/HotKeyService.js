@@ -23,8 +23,10 @@ app
         for (let hotkey of keyPresses) {                
             if (!uniqueHotKeys.includes(hotkey)) {
                 let hotkeyInfo = self.hotKeyList.find(info => info.hotkey.toLowerCase() === hotkey.toLowerCase());
-                hotkeyInfo.imgPath = getImagePath(hotkeyInfo);
-                uniqueHotKeys.push(hotkeyInfo);
+                if (hotkeyInfo) {
+                    hotkeyInfo.imgPath = getImagePath(hotkeyInfo);
+                    uniqueHotKeys.push(hotkeyInfo);
+                }
             }
         }
         return uniqueHotKeys;
