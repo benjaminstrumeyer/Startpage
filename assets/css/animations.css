@@ -1,11 +1,21 @@
-@keyframes test {
+@keyframes fade {
     from {opacity: 0;}
     to {opacity: 1;} 
 }
 
 .table-element-animation {
-    animation-name: test;
+    animation-name: fade;
     animation-duration: .5s;
+}
+
+@keyframes grow {
+    from {transform: scale(0);}
+    to {transform: scale(1.2);}
+}
+
+.hotkey-icon-animation {
+    animation-name: grow;
+    animation-duration: .2s;
 }
 
 /*
