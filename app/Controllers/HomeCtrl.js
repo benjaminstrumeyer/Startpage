@@ -10,8 +10,6 @@ app
             $scope.surfing = true;
             $scope.anime = true;
             $scope.other = true;
-            
-            $scope.test = true;
         }
         $scope.init();
     });

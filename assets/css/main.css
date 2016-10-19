@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/Background/rainbow.jpg);
+    background: -webkit-radial-gradient(bottom, #B5CED5, #18A0C7);
 }
 
 #active-application-container {
@@ -128,6 +128,4 @@ tr > td {
 .hotkey-icon {
     height: 120px;
     width: 120px;
-}
-    
 }
