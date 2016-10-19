@@ -20,13 +20,11 @@ app
     self.getUniqueKeyPresses = function(keyPresses) {
         var uniqueHotKeys = [];
 
-        for (let hotkey of keyPresses) {                
-            if (!uniqueHotKeys.includes(hotkey)) {
-                let hotkeyInfo = self.hotKeyList.find(info => info.hotkey.toLowerCase() === hotkey.toLowerCase());
-                if (hotkeyInfo) {
-                    hotkeyInfo.imgPath = getImagePath(hotkeyInfo);
-                    uniqueHotKeys.push(hotkeyInfo);
-                }
+        for (let hotkey of keyPresses) {
+            let hotkeyInfo = self.hotKeyList.find(info => info.hotkey.toLowerCase() === hotkey.toLowerCase());
+            if (hotkeyInfo && !uniqueHotKeys.includes(hotkeyInfo)) {
+                hotkeyInfo.imgPath = getImagePath(hotkeyInfo);
+                 uniqueHotKeys.push(hotkeyInfo);
             }
         }
         return uniqueHotKeys;
