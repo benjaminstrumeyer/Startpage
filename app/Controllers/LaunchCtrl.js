@@ -8,6 +8,9 @@ app
         return $scope.keyPresses;
     },
     function(newVal, oldVal) {
+        
+        // If a Hotkey is deleted, remove all of the hotkeys pressed. 
+        // TODO: Find the last hotkey pressed. Remove it and append the front and back of the array. 
         if (newVal.length < oldVal.length) {
             $scope.keyPresses = "";
         }
