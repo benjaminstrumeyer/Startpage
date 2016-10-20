@@ -8,6 +8,9 @@ app
         return $scope.keyPresses;
     },
     function(newVal, oldVal) {
+        if (newVal.length < oldVal.length) {
+            $scope.keyPresses = "";
+        }
         $rootScope.uniqueHotKeys = hotKeyInformation.getUniqueKeyPresses($scope.keyPresses);
     });
 
