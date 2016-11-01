@@ -3,7 +3,8 @@ app
     return {
         restrict: 'A',
         link: function(scope, elem, attrs) {
-            $(elem).on("blur", () => $(elem).focus());
+            //Requires a timeout to work on firefox.
+            $(elem).on("blur", () => setTimeout(() => $(elem).focus(), 1));    
         }
     }         
 });
