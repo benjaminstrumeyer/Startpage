@@ -120,7 +120,7 @@
             </div>
             <div ng-controller="launchCtrl">
                 <form class="hidden-input-field" ng-submit="launch()">
-                    <input id="hidden-form" type="text" autofocus autocomplete="off" ng-model="keyPresses" />
+                    <input id="hidden-form" type="text" autofocus autocomplete="off" ng-model="keyPresses" blurfocus/>
                 </form>
             </div>
         </div>
@@ -156,5 +156,6 @@
 
     <!-- Directives -->
     <script src="app/Directives/HotKeyDirective.js"></script>
+    <script src="app/Directives/BlurFocusDirective.js"></script>
 </body>
 </html>
