@@ -6,5 +6,5 @@ app
             //Requires a timeout to work on firefox.
             $(elem).on("blur", () => setTimeout(() => $(elem).focus(), 1));    
         }
-    }         
+    }
 });

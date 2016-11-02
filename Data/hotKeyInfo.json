@@ -71,7 +71,7 @@
     },
     {
         "nickname": "Serebii",
-        "hotkey": "P",
+        "hotkey": "X",
         "url": "http://serebii.net/",
         "category": "Games",
         "imgName" : "Serebii"
@@ -85,7 +85,7 @@
     },
     {
         "nickname": "Github",
-        "hotkey": "G",
+        "hotkey": "Z",
         "url": "https://github.com/",
         "category": "Programming",
         "imgName" : "Github"
@@ -141,7 +141,7 @@
     },
     {
         "nickname": "MangaStream",
-        "hotkey": "M",
+        "hotkey": "K",
         "url": "http://mangastream.com/",
         "category": "Anime",
         "imgName" : "MangaStream"
@@ -159,5 +159,12 @@
         "url": "https://www.pushbullet.com/",
         "category": "Other",
         "imgName" : "Pushbullet"
+    },
+    {
+        "nickname": "Google",
+        "hotkey": "G",
+        "url": "https://www.google.com/",
+        "category": "Other",
+        "imgName" : "Google"
     }
 ]
