@@ -8,6 +8,7 @@ app
         $scope.imgPaths = [];
         
         var imgPaths = [];
+        
 
 //        console.log(imgPaths);
        

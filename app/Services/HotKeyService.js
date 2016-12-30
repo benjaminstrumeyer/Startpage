@@ -1,5 +1,5 @@
 app
-    .service('hotKeyInformation', function($http, $q) {    
+    .service('hotKeyInformation', function($http) {    
         
     var self = this;
 
@@ -9,8 +9,7 @@ app
         $http.get('data/hotKeyInfo.json')
             .success(function(result) {
                 self.hotKeyList = result;
-
-                console.log(self.hotKeyList)
+                console.log(self.hotKeyList);
             });
     };
 
