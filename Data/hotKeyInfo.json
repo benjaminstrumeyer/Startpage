@@ -166,5 +166,12 @@
         "url": "https://www.google.com/",
         "category": "Other",
         "imgName" : "Google"
+    },
+    {
+        "nickname": "Instapaper",
+        "hotkey": "I",
+        "url": "https://www.instapaper.com/u",
+        "category": "Other",
+        "imgName" : "Instapaper"
     }
 ]
