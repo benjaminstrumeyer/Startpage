@@ -1,2 +1,3 @@
-# Paws For a Cause Website
-A website for the family business to showcase new items, advertise sale events, and express an online presence. 
+#Startpage
+
+Personal homepage created to quickly navigate to frequently visited websites more easily. Hotkeys can be viewed by hovering on each of the 8 icon categories. Pressing a hotkey will queue the corresponding website and 'Enter' will open websites in order. 'Backspace' removes all hotkeys from the queue.
